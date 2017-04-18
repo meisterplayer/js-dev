@@ -4,7 +4,7 @@
   "description": "Basic development setup for Triple JS projects",
   "main": "index.js",
   "scripts": {
-    "postinstall": "node bin/npm-postinstall",
+    "postinstall": "node bin/npm-postinstall"
   },
   "keywords": [
     "triple",
