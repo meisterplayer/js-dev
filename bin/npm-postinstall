@@ -1,0 +1,19 @@
+#!/usr/bin/env node
+const fs = require('fs');
+const path = require('path');
+
+// projectRoot/node_modules/@npm-wearettriple/js-dev, hence moving up 3 directories
+if (fs.existsSync(path.resolve('..', '..', '..', '.editorconfig'))) {
+    console.warn('Not copying .editorconfig, local file detected.');
+} else {
+    fs.createReadStream(path.normalize('.editorconfig'))
+        .pipe(fs.createWriteStream(path.resolve('..', '..', '..', '.editorconfig')));
+}
+
+// projectRoot/node_modules/@npm-wearettriple/js-dev, hence moving up 3 directories
+if (fs.existsSync(path.resolve('..', '..', '..', '.eslintrc'))) {
+    console.warn('Not copying .eslintrc, local file detected.');
+} else {
+    fs.createReadStream(path.normalize('.eslintrc'))
+        .pipe(fs.createWriteStream(path.resolve('..', '..', '..', '.eslintrc')));
+}

@@ -1,0 +1,41 @@
+{
+  "name": "meister-js-dev",
+  "version": "3.1.0",
+  "description": "Basic development setup for Triple JS projects",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "node bin/npm-postinstall",
+  },
+  "keywords": [
+    "triple",
+    "js",
+    "javascript",
+    "development",
+    "dev"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/meisterplayer/js-dev"
+  },
+  "author": "Triple",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "eslint": "^3.14.1",
+    "eslint-config-airbnb": "^14.0.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^3.0.2",
+    "eslint-plugin-react": "^6.9.0",
+    "eslint-summary": "^1.0.0",
+    "git-rev": "^0.2.1",
+    "gulp": "^3.9.1",
+    "gulp-bump": "^2.6.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-conventional-changelog": "^1.1.0",
+    "gulp-eslint": "^3.0.1",
+    "gulp-jsdoc3": "^1.0.1",
+    "gulp-replace": "^0.5.4",
+    "gulp-watch": "^4.3.11",
+    "gulp-zip": "^4.0.0",
+    "yargs": "^6.6.0"
+  }
+}
